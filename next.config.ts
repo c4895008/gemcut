@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // 移除 output: "export"，使用默认的服务端渲染模式
+  // 静态导出，用于 GitHub Pages 部署
+  output: "export",
   images: {
     unoptimized: true,
   },
